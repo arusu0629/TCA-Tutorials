@@ -11,6 +11,8 @@
 		2F4B19882A6E7C9800C35954 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19872A6E7C9800C35954 /* ContentView.swift */; };
 		2F4B198A2A6E7C9A00C35954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4B19892A6E7C9A00C35954 /* Assets.xcassets */; };
 		2F4B198D2A6E7C9A00C35954 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4B198C2A6E7C9A00C35954 /* Preview Assets.xcassets */; };
+		2F4B19942A6E7DCC00C35954 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */; };
+		2F4B19972A6E7E7F00C35954 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		2F4B19872A6E7C9800C35954 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F4B19892A6E7C9A00C35954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4B198C2A6E7C9A00C35954 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4B19972A6E7E7F00C35954 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				2F4B19872A6E7C9800C35954 /* ContentView.swift */,
 				2F4B19892A6E7C9A00C35954 /* Assets.xcassets */,
 				2F4B198B2A6E7C9A00C35954 /* Preview Content */,
+				2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */,
 			);
 			path = "TCA-Tutorials";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "TCA-Tutorials";
+			packageProductDependencies = (
+				2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */,
+			);
 			productName = "TCA-Tutorials";
 			productReference = 2F4B19822A6E7C9800C35954 /* TCA-Tutorials.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 2F4B19792A6E7C9800C35954;
+			packageReferences = (
+				2F4B19952A6E7E7F00C35954 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 2F4B19832A6E7C9800C35954 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4B19942A6E7DCC00C35954 /* CounterFeature.swift in Sources */,
 				2F4B19882A6E7C9800C35954 /* ContentView.swift in Sources */,
 				2F4B19862A6E7C9800C35954 /* TCA_TutorialsApp.swift in Sources */,
 			);
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F4B19952A6E7E7F00C35954 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/pointfreeco/swift-composable-architecture#Installation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F4B19952A6E7E7F00C35954 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F4B197A2A6E7C9800C35954 /* Project object */;
 }
