@@ -28,6 +28,8 @@ struct CounterFeature: ReducerProtocol {
 
     enum CancelID { case timer }
 
+    @Dependency(\.continuousClock) var clock
+
     func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
         switch action {
         case .decrementButtonTapped:
@@ -64,8 +66,7 @@ struct CounterFeature: ReducerProtocol {
             state.isTimerRunning.toggle()
             if state.isTimerRunning {
                 return .run { send in
-                    while true {
-                        try await Task.sleep(for: .seconds(1))
+                    for await _ in self.clock.timer(interval: .seconds(1)) {
                         await send(.timerTick)
                     }
                 }
@@ -79,6 +80,9 @@ struct CounterFeature: ReducerProtocol {
 }
 
 extension CounterFeature.State: Equatable {}
+
+// For testTimer in CounterFeatureTests.swift
+extension CounterFeature.Action: Equatable {}
 
 struct CounterView: View {
     let store: StoreOf<CounterFeature>
