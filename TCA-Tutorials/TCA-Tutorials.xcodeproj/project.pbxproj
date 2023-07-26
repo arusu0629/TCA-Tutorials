@@ -13,7 +13,18 @@
 		2F4B198D2A6E7C9A00C35954 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4B198C2A6E7C9A00C35954 /* Preview Assets.xcassets */; };
 		2F4B19942A6E7DCC00C35954 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */; };
 		2F4B19972A6E7E7F00C35954 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */; };
+		2F4B19AC2A7112FC00C35954 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F4B19A72A7112ED00C35954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F4B197A2A6E7C9800C35954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F4B19812A6E7C9800C35954;
+			remoteInfo = "TCA-Tutorials";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F4B19822A6E7C9800C35954 /* TCA-Tutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCA-Tutorials.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +34,8 @@
 		2F4B198C2A6E7C9A00C35954 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		2F4B199A2A6FDBB700C35954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
+		2F4B19A32A7112ED00C35954 /* TCA-TutorialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA-TutorialsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +47,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F4B19A02A7112ED00C35954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				2F4B19842A6E7C9800C35954 /* TCA-Tutorials */,
+				2F4B19A42A7112ED00C35954 /* TCA-TutorialsTests */,
 				2F4B19832A6E7C9800C35954 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				2F4B19822A6E7C9800C35954 /* TCA-Tutorials.app */,
+				2F4B19A32A7112ED00C35954 /* TCA-TutorialsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +96,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2F4B19A42A7112ED00C35954 /* TCA-TutorialsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */,
+			);
+			path = "TCA-TutorialsTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +127,24 @@
 			productReference = 2F4B19822A6E7C9800C35954 /* TCA-Tutorials.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2F4B19A22A7112ED00C35954 /* TCA-TutorialsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F4B19A92A7112ED00C35954 /* Build configuration list for PBXNativeTarget "TCA-TutorialsTests" */;
+			buildPhases = (
+				2F4B199F2A7112ED00C35954 /* Sources */,
+				2F4B19A02A7112ED00C35954 /* Frameworks */,
+				2F4B19A12A7112ED00C35954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F4B19A82A7112ED00C35954 /* PBXTargetDependency */,
+			);
+			name = "TCA-TutorialsTests";
+			productName = "TCA-TutorialsTests";
+			productReference = 2F4B19A32A7112ED00C35954 /* TCA-TutorialsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +157,10 @@
 				TargetAttributes = {
 					2F4B19812A6E7C9800C35954 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					2F4B19A22A7112ED00C35954 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2F4B19812A6E7C9800C35954;
 					};
 				};
 			};
@@ -129,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				2F4B19812A6E7C9800C35954 /* TCA-Tutorials */,
+				2F4B19A22A7112ED00C35954 /* TCA-TutorialsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +193,13 @@
 			files = (
 				2F4B198D2A6E7C9A00C35954 /* Preview Assets.xcassets in Resources */,
 				2F4B198A2A6E7C9A00C35954 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4B19A12A7112ED00C35954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +216,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F4B199F2A7112ED00C35954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4B19AC2A7112FC00C35954 /* CounterFeatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F4B19A82A7112ED00C35954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F4B19812A6E7C9800C35954 /* TCA-Tutorials */;
+			targetProxy = 2F4B19A72A7112ED00C35954 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2F4B198E2A6E7C9A00C35954 /* Debug */ = {
@@ -331,6 +407,40 @@
 			};
 			name = Release;
 		};
+		2F4B19AA2A7112ED00C35954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nakandakari.toru.TCA-TutorialsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCA-Tutorials.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCA-Tutorials";
+			};
+			name = Debug;
+		};
+		2F4B19AB2A7112ED00C35954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nakandakari.toru.TCA-TutorialsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCA-Tutorials.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCA-Tutorials";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +458,15 @@
 			buildConfigurations = (
 				2F4B19912A6E7C9A00C35954 /* Debug */,
 				2F4B19922A6E7C9A00C35954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F4B19A92A7112ED00C35954 /* Build configuration list for PBXNativeTarget "TCA-TutorialsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4B19AA2A7112ED00C35954 /* Debug */,
+				2F4B19AB2A7112ED00C35954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
