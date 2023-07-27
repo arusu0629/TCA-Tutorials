@@ -14,6 +14,8 @@
 		2F4B19972A6E7E7F00C35954 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */; };
 		2F4B19AC2A7112FC00C35954 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */; };
 		2F4B19AE2A712ED000C35954 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19AD2A712ED000C35954 /* NumberFactClient.swift */; };
+		2F4B19B42A72110500C35954 /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19B32A72110500C35954 /* ContactsFeature.swift */; };
+		2F4B19B62A7213CF00C35954 /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19B52A7213CF00C35954 /* AddContactFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		2F4B19A32A7112ED00C35954 /* TCA-TutorialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA-TutorialsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4B19AD2A712ED000C35954 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		2F4B19B32A72110500C35954 /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
+		2F4B19B52A7213CF00C35954 /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		2F4B19842A6E7C9800C35954 /* TCA-Tutorials */ = {
 			isa = PBXGroup;
 			children = (
+				2F4B19B22A7210F300C35954 /* ContactsExample */,
 				2F4B19AF2A720FC800C35954 /* CounterExample */,
 				2F4B199A2A6FDBB700C35954 /* Info.plist */,
 				2F4B19852A6E7C9800C35954 /* TCA_TutorialsApp.swift */,
@@ -118,6 +123,15 @@
 				2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */,
 			);
 			path = CounterTests;
+			sourceTree = "<group>";
+		};
+		2F4B19B22A7210F300C35954 /* ContactsExample */ = {
+			isa = PBXGroup;
+			children = (
+				2F4B19B32A72110500C35954 /* ContactsFeature.swift */,
+				2F4B19B52A7213CF00C35954 /* AddContactFeature.swift */,
+			);
+			path = ContactsExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4B19942A6E7DCC00C35954 /* CounterFeature.swift in Sources */,
+				2F4B19B62A7213CF00C35954 /* AddContactFeature.swift in Sources */,
 				2F4B19862A6E7C9800C35954 /* TCA_TutorialsApp.swift in Sources */,
 				2F4B19AE2A712ED000C35954 /* NumberFactClient.swift in Sources */,
+				2F4B19B42A72110500C35954 /* ContactsFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
