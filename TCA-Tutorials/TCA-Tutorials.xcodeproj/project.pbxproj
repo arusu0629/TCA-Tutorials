@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2F4B19862A6E7C9800C35954 /* TCA_TutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19852A6E7C9800C35954 /* TCA_TutorialsApp.swift */; };
-		2F4B19882A6E7C9800C35954 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19872A6E7C9800C35954 /* ContentView.swift */; };
 		2F4B198A2A6E7C9A00C35954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4B19892A6E7C9A00C35954 /* Assets.xcassets */; };
 		2F4B198D2A6E7C9A00C35954 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4B198C2A6E7C9A00C35954 /* Preview Assets.xcassets */; };
 		2F4B19942A6E7DCC00C35954 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */; };
 		2F4B19972A6E7E7F00C35954 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */; };
 		2F4B19AC2A7112FC00C35954 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */; };
+		2F4B19AE2A712ED000C35954 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19AD2A712ED000C35954 /* NumberFactClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 /* Begin PBXFileReference section */
 		2F4B19822A6E7C9800C35954 /* TCA-Tutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCA-Tutorials.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4B19852A6E7C9800C35954 /* TCA_TutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_TutorialsApp.swift; sourceTree = "<group>"; };
-		2F4B19872A6E7C9800C35954 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F4B19892A6E7C9A00C35954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4B198C2A6E7C9A00C35954 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		2F4B199A2A6FDBB700C35954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		2F4B19A32A7112ED00C35954 /* TCA-TutorialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA-TutorialsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4B19AD2A712ED000C35954 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +78,11 @@
 		2F4B19842A6E7C9800C35954 /* TCA-Tutorials */ = {
 			isa = PBXGroup;
 			children = (
+				2F4B19AF2A720FC800C35954 /* CounterExample */,
 				2F4B199A2A6FDBB700C35954 /* Info.plist */,
 				2F4B19852A6E7C9800C35954 /* TCA_TutorialsApp.swift */,
-				2F4B19872A6E7C9800C35954 /* ContentView.swift */,
 				2F4B19892A6E7C9A00C35954 /* Assets.xcassets */,
 				2F4B198B2A6E7C9A00C35954 /* Preview Content */,
-				2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */,
 			);
 			path = "TCA-Tutorials";
 			sourceTree = "<group>";
@@ -99,9 +98,26 @@
 		2F4B19A42A7112ED00C35954 /* TCA-TutorialsTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */,
+				2F4B19B02A720FF500C35954 /* CounterTests */,
 			);
 			path = "TCA-TutorialsTests";
+			sourceTree = "<group>";
+		};
+		2F4B19AF2A720FC800C35954 /* CounterExample */ = {
+			isa = PBXGroup;
+			children = (
+				2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */,
+				2F4B19AD2A712ED000C35954 /* NumberFactClient.swift */,
+			);
+			path = CounterExample;
+			sourceTree = "<group>";
+		};
+		2F4B19B02A720FF500C35954 /* CounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */,
+			);
+			path = CounterTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4B19942A6E7DCC00C35954 /* CounterFeature.swift in Sources */,
-				2F4B19882A6E7C9800C35954 /* ContentView.swift in Sources */,
 				2F4B19862A6E7C9800C35954 /* TCA_TutorialsApp.swift in Sources */,
+				2F4B19AE2A712ED000C35954 /* NumberFactClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
