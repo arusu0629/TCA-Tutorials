@@ -11,13 +11,13 @@
 		2F4B198A2A6E7C9A00C35954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4B19892A6E7C9A00C35954 /* Assets.xcassets */; };
 		2F4B198D2A6E7C9A00C35954 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4B198C2A6E7C9A00C35954 /* Preview Assets.xcassets */; };
 		2F4B19942A6E7DCC00C35954 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19932A6E7DCC00C35954 /* CounterFeature.swift */; };
-		2F4B19972A6E7E7F00C35954 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */; };
 		2F4B19AC2A7112FC00C35954 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B199B2A71113700C35954 /* CounterFeatureTests.swift */; };
 		2F4B19AE2A712ED000C35954 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19AD2A712ED000C35954 /* NumberFactClient.swift */; };
 		2F4B19B42A72110500C35954 /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19B32A72110500C35954 /* ContactsFeature.swift */; };
 		2F4B19B62A7213CF00C35954 /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19B52A7213CF00C35954 /* AddContactFeature.swift */; };
 		2F4B19B92A72834300C35954 /* ContactsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19B82A72834300C35954 /* ContactsFeatureTests.swift */; };
 		2F4B19BB2A73B9B100C35954 /* ContactDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B19BA2A73B9B100C35954 /* ContactDetailFeature.swift */; };
+		2F9BA5982A792E6C00A8023D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9BA5972A792E6C00A8023D /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F4B19972A6E7E7F00C35954 /* ComposableArchitecture in Frameworks */,
+				2F9BA5982A792E6C00A8023D /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +165,7 @@
 			);
 			name = "TCA-Tutorials";
 			packageProductDependencies = (
-				2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */,
+				2F9BA5972A792E6C00A8023D /* ComposableArchitecture */,
 			);
 			productName = "TCA-Tutorials";
 			productReference = 2F4B19822A6E7C9800C35954 /* TCA-Tutorials.app */;
@@ -218,7 +218,7 @@
 			);
 			mainGroup = 2F4B19792A6E7C9800C35954;
 			packageReferences = (
-				2F4B19952A6E7E7F00C35954 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				2F9BA5962A792E6C00A8023D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 2F4B19832A6E7C9800C35954 /* Products */;
 			projectDirPath = "";
@@ -522,20 +522,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F4B19952A6E7E7F00C35954 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		2F9BA5962A792E6C00A8023D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "http://github.com/pointfreeco/swift-composable-architecture#Installation";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2F4B19962A6E7E7F00C35954 /* ComposableArchitecture */ = {
+		2F9BA5972A792E6C00A8023D /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F4B19952A6E7E7F00C35954 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 2F9BA5962A792E6C00A8023D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
