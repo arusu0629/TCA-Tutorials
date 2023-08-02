@@ -14,7 +14,7 @@ struct Contact: Equatable, Identifiable {
     var name: String
 }
 
-struct ContactsFeature: ReducerProtocol {
+struct ContactsFeature: Reducer {
 
     struct State: Equatable {
         var contacts: IdentifiedArrayOf<Contact> = []
@@ -31,7 +31,7 @@ struct ContactsFeature: ReducerProtocol {
         }
     }
     @Dependency(\.uuid) var uuid
-    var body: some ReducerProtocolOf<Self> {
+    var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
             case .addButtonTapped:
@@ -78,7 +78,7 @@ struct ContactsFeature: ReducerProtocol {
 }
 
 extension ContactsFeature {
-    struct Destination: ReducerProtocol {
+    struct Destination: Reducer {
         enum State: Equatable {
             case addContact(AddContactFeature.State)
             case alert(AlertState<ContactsFeature.Action.Alert>)
@@ -87,7 +87,7 @@ extension ContactsFeature {
             case addContact(AddContactFeature.Action)
             case alert(ContactsFeature.Action.Alert)
         }
-        var body: some ReducerProtocolOf<Self> {
+        var body: some ReducerOf<Self> {
             Scope(state: /State.addContact, action: /Action.addContact) {
                 AddContactFeature()
             }
@@ -171,9 +171,10 @@ struct ContentView_Previews: PreviewProvider {
                         Contact(id: UUID(), name: "Blob Jr"),
                         Contact(id: UUID(), name: "Blob Sr"),
                     ]
-                ),
-                reducer: ContactsFeature()
-            )
+                )
+            ) {
+                ContactsFeature()
+            }
         )
     }
 }

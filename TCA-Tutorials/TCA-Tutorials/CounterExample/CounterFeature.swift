@@ -8,7 +8,7 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct CounterFeature: ReducerProtocol {
+struct CounterFeature: Reducer {
 
     struct State {
         var count = 0
@@ -31,7 +31,7 @@ struct CounterFeature: ReducerProtocol {
     @Dependency(\.continuousClock) var clock
     @Dependency(\.numberFact) var numberFact
 
-    func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .decrementButtonTapped:
             state.count -= 1
